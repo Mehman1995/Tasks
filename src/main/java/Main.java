@@ -1,8 +1,5 @@
 import java.io.*;
 import java.util.*;
-
-import Comporator.PatyhComporator;
-import Comporator.PatyhComporatorAge;
 import animal.*;
 
 public class Main {
@@ -20,26 +17,22 @@ public class Main {
 
         PrintWriter writer = new PrintWriter(new FileWriter(file, true)); //Запись в файл
 
-        Map<Integer, String> map = new TreeMap<>();
+        Map<String, Integer> map = new TreeMap<>();
 
-        map.put(cat.getAge(), cat.getName());
-        map.put(cat.getAge(), dog.getName());
-        map.put(cat.getAge(), bird.getName());
-        map.put(cat.getAge(), patyh.getName());
-
-        writer.println(map);
+        map.put(cat.getName(), cat.getAge());
+        map.put(dog.getName(), cat.getAge());
+        map.put(bird.getName(), cat.getAge());
+        map.put(patyh.getName(), cat.getAge());
+//        writer.println(map);
         writer.close();
 
         BufferedReader reader = new BufferedReader(new FileReader(file)); // чтение из файла
         String line;
         while ((line = reader.readLine()) != null) {
-
-                System.out.println(line);
-            }
-
-//
+            System.out.println(line);
         }
     }
+}
 
 //    public static List<Cat> sorted (List<Cat> cats){                ПОПЫТКА №5
 //        List<Cat> sort = cats.stream()

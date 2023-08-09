@@ -8,5 +8,7 @@
 {bird №97=77, cat №19=6, dog №41=88, patyh10=89}
 {bird №41=83, cat №5=51, dog №20=47, patyh №11=49}
 {bird №64=44, cat №72=77, dog №42=70, patyh №66=37}
-
-
+{bird №1=92, cat №64=92, dog №7=92, patyh №63=92}
+{bird №46=95, cat №29=95, dog №26=95, patyh №75=95}
+{bird №18=20, cat №39=91, dog №85=39, patyh73=90}
+{bird №80=49, cat №46=49, dog №3=49, patyh №93=49}
