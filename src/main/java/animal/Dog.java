@@ -1,7 +1,6 @@
-package animal;
+package main.java.animal;
 
-import animalsInterfаce.Animals;
-
+import main.java.animalsInterfаce.Animals;
 import java.util.Random;
 
 public class Dog implements Animals {
@@ -39,6 +38,8 @@ public class Dog implements Animals {
     public void moveAround() {
         System.out.println("Собака бегает куда глаза глядят ");
     }
+
+
 
     @Override
     public String toString() {

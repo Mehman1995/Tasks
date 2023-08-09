@@ -1,11 +1,10 @@
-package animal;
+package main.java.animal;
 
-import animalsInterfаce.Animals;
+import main.java.animalsInterfаce.Animals;
+import lombok.Data;
+import java.util.*;
 
-import java.util.Comparator;
-import java.util.List;
-import java.util.Random;
-
+@Data
 public class Cat implements Animals {
     private String name;
     private int age;
@@ -17,8 +16,6 @@ public class Cat implements Animals {
         this.id = catBuilder.id;
     }
 
-    public Cat() {
-    }
 
     public String getName() {
         return name;
@@ -43,15 +40,8 @@ public class Cat implements Animals {
         System.out.println("Кошка прыгает на все что видет ");
     }
 
-    @Override
-    public String toString() {
-        return "Кошка " +
-                "с именем = " + name  +
-                ", возростом = " + age +
-                "лет, id=" + id;
-    }
 
-    public Cat generateRandom(){  //метод для генирации случайных чисел
+    public Cat generateRandom() {  //метод для генирации случайных чисел
         Random catRandom = new Random();
         return new CatBuilder()
                 .setName("cat №" + catRandom.nextInt(100))
@@ -61,13 +51,12 @@ public class Cat implements Animals {
     }
 
 
-
     public static class CatBuilder {
         private String name;
         private int age;
         private int id;
 
-        public CatBuilder(String name, int age,int id) {
+        public CatBuilder(String name, int age, int id) {
             this.name = name;
             this.age = age;
             this.id = id;
@@ -80,7 +69,8 @@ public class Cat implements Animals {
             this.age = age;
             return this;
         }
-        public CatBuilder setId(int id){
+
+        public CatBuilder setId(int id) {
             this.id = id;
             return this;
         }

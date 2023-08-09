@@ -1,7 +1,6 @@
-package animal;
+package main.java.animal;
 
-import animalsInterfаce.Animals;
-
+import main.java.animalsInterfаce.Animals;
 import java.util.Random;
 
 public class Bird implements Animals {
@@ -39,6 +38,8 @@ public class Bird implements Animals {
     public void moveAround() {
         System.out.println("Птичка летает по комнате ");
     }
+
+
 
     @Override
     public String toString() {
