@@ -1,4 +1,4 @@
-package main.java.animalsInterfаce;
+package animalsInterfаce;
 
 import java.util.Iterator;
 

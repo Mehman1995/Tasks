@@ -1,12 +1,9 @@
-{bird №83=0, cat №58=30, dog №89=23}
-{bird №86=49, cat №41=64, dog №0=34}
-{bird №58=91, cat №46=33, dog №14=33}
-{bird №32=90, cat №48=30, dog №40=53}
-{bird №26=19, cat №54=34, dog №59=87}
-{bird №21=9, cat №43=10, dog №94=61}
-{bird №76=16, cat №41=17, dog №1=29}
-{bird №17=73, cat №35=23, dog №33=31}
-{bird №83=55, cat №56=13, dog №91=69, Кеша79=15}
-{bird №95=54, cat №1=43, dog №40=12, Кеша18=65}
-{bird №83=85, cat №14=90, dog №34=51, Кеша14=44}
-{bird №14=15, cat №48=14, dog №4=82, Кеша0=20}
+{bird №47=18, cat №18=81, dog №67=54, patyh18=9}
+{bird №84=49, cat №97=38, dog №23=78, patyh35=15}
+{bird №68=81, cat №70=3, dog №86=89, patyh44=3}
+{bird №7=46, cat №56=56, dog №71=19, patyh9=20}
+{bird №18=20, cat №39=91, dog №85=39, patyh73=90}
+{bird №95=40, cat №73=38, dog №85=16, patyh46=62}
+{bird №97=77, cat №19=6, dog №41=88, patyh10=89}
+{bird №19=78, cat №18=76, dog №42=85, patyh57=49}
+cat №39 cat №23 cat №87 
