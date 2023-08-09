@@ -5,6 +5,9 @@ import lombok.Builder;
 import lombok.Value;
 import lombok.With;
 
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Random;
 
 @Value
@@ -14,6 +17,7 @@ public class Patyh implements Animals {
     String name;
     int age;
     int id;
+
     public Patyh generateRandom() {  //метод для генирации случайных чисел
         Random patyhRandom = new Random();
         return Patyh.builder()
@@ -32,4 +36,7 @@ public class Patyh implements Animals {
     public void moveAround() {
         System.out.println("идет по жизни куда глаза глидят ведь он пятух");
     }
+
+
+
 }

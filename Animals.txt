@@ -1,9 +1,12 @@
+{bird №18=20, cat №39=91, dog №85=39, patyh73=90}
+{bird №19=78, cat №18=76, dog №42=85, patyh57=49}
 {bird №47=18, cat №18=81, dog №67=54, patyh18=9}
-{bird №84=49, cat №97=38, dog №23=78, patyh35=15}
 {bird №68=81, cat №70=3, dog №86=89, patyh44=3}
 {bird №7=46, cat №56=56, dog №71=19, patyh9=20}
-{bird №18=20, cat №39=91, dog №85=39, patyh73=90}
+{bird №84=49, cat №97=38, dog №23=78, patyh35=15}
 {bird №95=40, cat №73=38, dog №85=16, patyh46=62}
 {bird №97=77, cat №19=6, dog №41=88, patyh10=89}
-{bird №19=78, cat №18=76, dog №42=85, patyh57=49}
-cat №39 cat №23 cat №87 
+{bird №41=83, cat №5=51, dog №20=47, patyh №11=49}
+{bird №64=44, cat №72=77, dog №42=70, patyh №66=37}
+
+
