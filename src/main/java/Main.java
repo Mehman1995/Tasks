@@ -20,14 +20,14 @@ public class Main {
 
         PrintWriter writer = new PrintWriter(new FileWriter(file, true)); //Запись в файл
 
-//        Map<Integer, String> map = new TreeMap<>();
+        Map<Integer, String> map = new TreeMap<>();
 
-//        map.put(cat.getAge(), cat.getName());
-//        map.put(cat.getAge(), dog.getName());
-//        map.put(cat.getAge(), bird.getName());
-//        map.put(cat.getAge(), patyh.getName());
+        map.put(cat.getAge(), cat.getName());
+        map.put(cat.getAge(), dog.getName());
+        map.put(cat.getAge(), bird.getName());
+        map.put(cat.getAge(), patyh.getName());
 
-//        writer.println(map);
+        writer.println(map);
         writer.close();
 
         BufferedReader reader = new BufferedReader(new FileReader(file)); // чтение из файла
