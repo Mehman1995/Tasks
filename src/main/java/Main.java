@@ -24,19 +24,19 @@ public class Main {
 
 
         try (PrintWriter writer = new PrintWriter(new FileWriter(file, true))) {   //чтение файла
-
-//            writer.println(map);
+            Map<String, String> map = new TreeMap<>();
+            map.put(cat.getAge(), cat.getName());
+            map.put(dog.getAge(), dog.getName());
+            map.put(bird.getAge(), bird.getName());
+            map.put(patyh.getAge(), patyh.getName());
+            writer.println(map);
 
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
 
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
-            Map<String, String> map = new TreeMap<>();
-            map.put(cat.getAge(), cat.getName());
-//            map.put(dog.getAge(), dog.getName());
-//            map.put(bird.getAge(), bird.getName());
-//            map.put(patyh.getAge(), patyh.getName());
+
             String line;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
