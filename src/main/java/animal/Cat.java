@@ -4,13 +4,12 @@ import animalsInterfаce.Animals;
 import lombok.Builder;
 import lombok.Value;
 import lombok.With;
-
 import java.util.*;
 
 @Value
 @Builder
 @With
-public class Cat implements Animals  {
+public class Cat implements Animals,Comparator<Cat> {
     String name;
     String age;
     int id;
@@ -34,17 +33,10 @@ public class Cat implements Animals  {
                 .id(catRandom.nextInt(100))
                 .build();
     }
-    public static String min(ArrayList<String> list, Comparator<String> comp)
-    {
-        String shortest = list.get(0);
 
-        for(String str : list) {
-            if ( comp.compare(str, shortest) < 0) {
-                shortest = str;
-            }
-        }
-        return shortest;
+    @Override
+    public int compare(Cat a, Cat b) {
+        return a.getName().compareTo(b.getName());
     }
-
 
 }

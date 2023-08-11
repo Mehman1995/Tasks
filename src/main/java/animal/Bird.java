@@ -5,12 +5,13 @@ import lombok.Builder;
 import lombok.Value;
 import lombok.With;
 
+import java.util.Comparator;
 import java.util.Random;
 
 @Value
 @Builder
 @With
-public class Bird implements Animals {
+public class Bird implements Animals, Comparator<Bird> {
     String name;
     String age;
     int id;
@@ -37,5 +38,8 @@ public class Bird implements Animals {
                 .build();
 
     }
-
+    @Override
+    public int compare(Bird a, Bird b) {
+        return a.getName().compareTo(b.getName());
+    }
 }
