@@ -1,14 +1,7 @@
-{bird №18=20, cat №39=91, dog №85=39, patyh73=90}
-{bird №19=78, cat №18=76, dog №42=85, patyh57=49}
-{bird №47=18, cat №18=81, dog №67=54, patyh18=9}
-{bird №68=81, cat №70=3, dog №86=89, patyh44=3}
-{bird №7=46, cat №56=56, dog №71=19, patyh9=20}
-{bird №84=49, cat №97=38, dog №23=78, patyh35=15}
-{bird №95=40, cat №73=38, dog №85=16, patyh46=62}
-{bird №97=77, cat №19=6, dog №41=88, patyh10=89}
-{bird №41=83, cat №5=51, dog №20=47, patyh №11=49}
-{bird №64=44, cat №72=77, dog №42=70, patyh №66=37}
-{bird №1=92, cat №64=92, dog №7=92, patyh №63=92}
-{bird №46=95, cat №29=95, dog №26=95, patyh №75=95}
-{bird №18=20, cat №39=91, dog №85=39, patyh73=90}
-{bird №80=49, cat №46=49, dog №3=49, patyh №93=49}
+{bird № 36=48, cat № 26=28, dog № 52=93, patyh № 90=40}
+{bird № 87=10, cat № 86=74, dog № 34=35, patyh № 74=62}
+{bird № 43=61, cat № 3=44, dog № 82=67, patyh № 5=62}
+{bird № 40=87, cat № 55=50, dog № 39=95, patyh № 64=62}
+{bird № 25=82, cat № 16=46, dog № 41=11, patyh № 44=3}
+{bird № 69=89, cat № 17=16, dog № 32=47, patyh № 30=31}
+{bird № 33=56, cat № 5=83, dog № 97=34, patyh № 4=15}

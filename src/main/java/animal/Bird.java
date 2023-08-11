@@ -6,12 +6,13 @@ import lombok.Value;
 import lombok.With;
 
 import java.util.Random;
+
 @Value
 @Builder
 @With
 public class Bird implements Animals {
     private String name;
-    private int age;
+    private String age;
     private int id;
 
 //    public Bird(BirdBuilder birdBuilder) {
@@ -46,19 +47,18 @@ public class Bird implements Animals {
     }
 
 
-
-//    @Override
+    //    @Override
 //    public String toString() {
 //        return "Птичка " +
 //                "с именем = " + name  +
 //                ", возростом = " + age +
 //                "лет, id=" + id;
 //    }
-    public Bird generateRandom(){
+    public Bird generateRandom() {
         Random birdRandom = new Random();
         return Bird.builder()
-                .name("bird №" + birdRandom.nextInt(100))
-                .age(birdRandom.nextInt(100))
+                .name("bird № " + birdRandom.nextInt(100))
+                .age("Возраст" + birdRandom.nextInt(100))
                 .id(birdRandom.nextInt(100))
                 .build();
 

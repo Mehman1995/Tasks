@@ -11,7 +11,7 @@ import java.util.Random;
 @With
 public class Dog implements Animals {
     private String name;
-    private int age;
+    private String age;
     private int id;
 
 //    public Dog(DogBuilder dogBuilder) {
@@ -57,8 +57,8 @@ public class Dog implements Animals {
     public Dog generateRandom(){
         Random dogRandom = new Random();
         return Dog.builder()
-                .name("dog №" + dogRandom.nextInt(100))
-                .age(dogRandom.nextInt(100))
+                .name("dog № " + dogRandom.nextInt(100))
+                .age("Возраст "+dogRandom.nextInt(100))
                 .id(dogRandom.nextInt(100))
                 .build();
     }

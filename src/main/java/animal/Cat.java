@@ -13,7 +13,7 @@ import java.util.*;
 @With
 public class Cat implements Animals {
     private String name;
-    private int age;
+    private String age;
     private int id;
 
 //    public Cat(CatBuilder catBuilder) {
@@ -50,8 +50,8 @@ public class Cat implements Animals {
     public Cat generateRandom() {  //метод для генирации случайных чисел
         Random catRandom = new Random();
         return Cat.builder()
-                .name("cat №" + catRandom.nextInt(100))
-                .age(catRandom.nextInt(100))
+                .name("cat № " + catRandom.nextInt(100))
+                .age(("Возраст " + catRandom.nextInt(100)))
                 .id(catRandom.nextInt(100))
                 .build();
     }

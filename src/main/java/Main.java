@@ -1,7 +1,12 @@
-import java.io.*;
-import java.util.*;
+
 
 import animal.*;
+
+import java.io.*;
+import java.util.Map;
+import java.util.SortedSet;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -15,25 +20,41 @@ public class Main {
 //        System.out.println(cat);
 //        System.out.println(dog);
 //        System.out.println(bird);
+//        System.out.println(patyh);
 
-        PrintWriter writer = new PrintWriter(new FileWriter(file, true)); //Запись в файл
 
-        Map<String, Integer> map = new TreeMap<>();
+        try (PrintWriter writer = new PrintWriter(new FileWriter(file, true))) {   //чтение файла
 
-        map.put(cat.getName(), cat.getAge());
-        map.put(dog.getName(), cat.getAge());
-        map.put(bird.getName(), cat.getAge());
-        map.put(patyh.getName(), cat.getAge());
-//        writer.println(map);
-        writer.close();
+//            writer.println(map);
 
-        BufferedReader reader = new BufferedReader(new FileReader(file)); // чтение из файла
-        String line;
-        while ((line = reader.readLine()) != null) {
-            System.out.println(line);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+            Map<String, String> map = new TreeMap<>();
+            map.put(cat.getAge(), cat.getName());
+//            map.put(dog.getAge(), dog.getName());
+//            map.put(bird.getAge(), bird.getName());
+//            map.put(patyh.getAge(), patyh.getName());
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
         }
     }
 }
+
+//        boolean res = sortMethod.SortLinesInFile("Animals.txt",false);
+//
+//        if (res) {
+//            System.out.println("OK");
+//        }else {
+//            System.out.println("Fail");
+//        }
+
 //    public static List<Cat> sorted (List<Cat> cats){                ПОПЫТКА №5
 //        List<Cat> sort = cats.stream()
 //                .sorted(Comparator.comparing(Cat::getAge))
