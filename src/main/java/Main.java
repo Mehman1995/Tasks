@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.*;
+
 import animal.*;
 
 public class Main {
@@ -33,7 +34,6 @@ public class Main {
         }
     }
 }
-
 //    public static List<Cat> sorted (List<Cat> cats){                ПОПЫТКА №5
 //        List<Cat> sort = cats.stream()
 //                .sorted(Comparator.comparing(Cat::getAge))
