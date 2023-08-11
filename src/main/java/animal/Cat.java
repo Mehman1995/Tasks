@@ -2,7 +2,6 @@ package animal;
 
 import animalsInterfаce.Animals;
 import lombok.Builder;
-import lombok.Data;
 import lombok.Value;
 import lombok.With;
 
@@ -11,30 +10,10 @@ import java.util.*;
 @Value
 @Builder
 @With
-public class Cat implements Animals {
-    private String name;
-    private String age;
-    private int id;
-
-//    public Cat(CatBuilder catBuilder) {
-//        this.name = catBuilder.name;
-//        this.age = catBuilder.age;
-//        this.id = catBuilder.id;
-//    }
-//
-//
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public int getId() {
-//        return id;
-//    }
-//
-//    public int getAge() {
-//        return age;
-//    }
-//
+public class Cat implements Animals  {
+    String name;
+    String age;
+    int id;
 
     @Override
     public void voice() {
@@ -55,39 +34,17 @@ public class Cat implements Animals {
                 .id(catRandom.nextInt(100))
                 .build();
     }
+    public static String min(ArrayList<String> list, Comparator<String> comp)
+    {
+        String shortest = list.get(0);
+
+        for(String str : list) {
+            if ( comp.compare(str, shortest) < 0) {
+                shortest = str;
+            }
+        }
+        return shortest;
+    }
+
+
 }
-//    public static class CatBuilder {
-//        private String name;
-//        private int age;
-//        private int id;
-//
-//        public CatBuilder(String name, int age, int id) {
-//            this.name = name;
-//            this.age = age;
-//            this.id = id;
-//        }
-//
-//        public CatBuilder() {
-//        }
-//
-//        public CatBuilder setAge(int age) {
-//            this.age = age;
-//            return this;
-//        }
-//
-//        public CatBuilder setId(int id) {
-//            this.id = id;
-//            return this;
-//        }
-//
-//        public CatBuilder setName(String name) {
-//            this.name = name;
-//            return this;
-//        }
-//
-//
-//        public Cat build() {
-//            return new Cat(this);
-//        }
-//    }
-//}

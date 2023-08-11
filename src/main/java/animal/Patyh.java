@@ -11,9 +11,9 @@ import java.util.Random;
 @Builder
 @With
 public class Patyh implements Animals {
-    private String name;
-    private String age;
-    private int id;
+    String name;
+    String age;
+    int id;
 
     public Patyh generateRandom() {  //метод для генирации случайных чисел
         Random patyhRandom = new Random();
