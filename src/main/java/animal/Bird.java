@@ -11,9 +11,9 @@ import java.util.Random;
 @Value
 @Builder
 @With
-public class Bird implements Animals, Comparator<Bird> {
+public class Bird implements Animals {
     String name;
-    String age;
+    int age;
     int id;
 
 //
@@ -32,14 +32,15 @@ public class Bird implements Animals, Comparator<Bird> {
     public Bird generateRandom() {
         Random birdRandom = new Random();
         return Bird.builder()
-                .name("bird № " + birdRandom.nextInt(100))
-                .age("Возраст " + birdRandom.nextInt(100))
+                .name("bird" + birdRandom.nextInt(100))
+                .age(birdRandom.nextInt(100))
                 .id(birdRandom.nextInt(100))
                 .build();
 
     }
+
     @Override
-    public int compare(Bird a, Bird b) {
-        return a.getName().compareTo(b.getName());
+    public String toString() {
+        return "Bird:" + "Имя=" + name + ", Возраст = " + age + ";"+'}';
     }
 }
