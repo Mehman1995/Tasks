@@ -20,24 +20,35 @@ public class Main {
             writer.write('\n');
             writer.write(bird.toString());
             writer.write('\n');
+
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
+            String s = "";
+            int symbol = reader.read();
+            int count;
+            String[] lines;
+
+            if((char) symbol == '\n'){
+                s = s.substring(0,s.length() - 1);
+
             }
-        }catch (IOException e){
+            HashMap<String, Integer> map = new HashMap<>();
+            map.put(cat.getName(), cat.getAge());
+            map.entrySet().stream()
+                    .sorted(Map.Entry.<String, Integer>comparingByValue().reversed()).forEach(System.out::println);
+
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
 
 
-        boolean res = sortMethod.SortLinesInFile("Animals.txt", false);   //сортировка мапы
-        if (res) {
-            System.out.println("OK");
-        } else {
-            System.out.println("Fail");
-        }
+//        boolean res = sortMethod.SortLinesInFile("Animals.txt", false);   //сортировка мапы
+//        if (res) {
+//            System.out.println("OK");
+//        } else {
+//            System.out.println("Fail");
+//        }
     }
 }
